@@ -21,8 +21,8 @@ def test_calculate_stats(test_input: str, expected: Dict):
     assert result['Max'] == expected['Max']
     assert result['Median'] == expected['Median']
     assert result['Sum'] == expected['Sum']
-    #assert result['StandardDeviation'] == pytest.approx(
-    #    expected['StandardDeviation'], rel=1e-3)
+    assert result['StandardDeviation'] == pytest.approx(
+        expected['StandardDeviation'], rel=1e-3)
 
 
 @pytest.mark.parametrize("test_input, expected", [
